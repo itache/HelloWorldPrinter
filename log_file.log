@@ -1,0 +1,52 @@
+2016-10-27 18:06:18 TRACE Application:15 - Application starts
+2016-10-27 18:06:18 TRACE HelloWorldMessager:16 - Input parameters: time = 18:06, locale = ru_RU
+2016-10-27 18:06:18 TRACE HelloWorldMessager:18 - Period resolved: DAY
+2016-10-27 18:06:18 TRACE HelloWorldMessager:21 - Message receivedДобрый день, Мир!
+2016-10-27 18:06:50 TRACE Application:15 - Application starts
+2016-10-27 18:06:50 TRACE HelloWorldMessager:16 - Input parameters: time = 18:06, locale = ru_RU
+2016-10-27 18:06:50 TRACE HelloWorldMessager:18 - Period resolved: DAY
+2016-10-27 18:06:50 TRACE HelloWorldMessager:21 - Message received: Добрый день, Мир!
+2016-10-27 18:07:44 [TRACE] Application:15 - Application starts
+2016-10-27 18:07:44 [TRACE] HelloWorldMessager:16 - Input parameters: time = 18:07, locale = ru_RU
+2016-10-27 18:07:44 [TRACE] HelloWorldMessager:18 - Period resolved: DAY
+2016-10-27 18:07:44 [TRACE] HelloWorldMessager:21 - Message received: Добрый день, Мир!
+2016-10-27 18:08:59 [TRACE] Application:15 - Application starts
+2016-10-27 18:08:59 [TRACE] HelloWorldMessager:16 - Input parameters: time = 18:08, locale = ru_RU
+2016-10-27 18:08:59 [TRACE] HelloWorldMessager:18 - Period resolved: DAY
+2016-10-27 18:08:59 [TRACE] HelloWorldMessager:21 - Message received: Добрый день, Мир!
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:27 - Input parameters: time = 07:44, locale = en
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:29 - Period resolved: MORNING
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:32 - Message received: Good morning, World!
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:27 - Input parameters: time = 19:44, locale = ru
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:29 - Period resolved: EVENING
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:32 - Message received: Добрый вечер, Мир!
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:27 - Input parameters: time = 23:44, locale = ru
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:29 - Period resolved: NIGHT
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:32 - Message received: Доброй ночи, Мир!
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:27 - Input parameters: time = 17:44, locale = en
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:29 - Period resolved: DAY
+2016-10-27 18:42:55 [TRACE] HelloWorldMessager:32 - Message received: Good day, World!
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:27 - Input parameters: time = 07:44, locale = en
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:29 - Period resolved: MORNING
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:32 - Message received: Good morning, World!
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:27 - Input parameters: time = 19:44, locale = ru
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:29 - Period resolved: EVENING
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:32 - Message received: Добрый вечер, Мир!
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:27 - Input parameters: time = 23:44, locale = ru
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:29 - Period resolved: NIGHT
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:32 - Message received: Доброй ночи, Мир!
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:27 - Input parameters: time = 17:44, locale = en
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:29 - Period resolved: DAY
+2016-10-27 18:43:23 [TRACE] HelloWorldMessager:32 - Message received: Good day, World!
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:27 - Input parameters: time = 07:44, locale = en
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:29 - Period resolved: MORNING
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:32 - Message received: Good morning, World!
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:27 - Input parameters: time = 19:44, locale = ru
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:29 - Period resolved: EVENING
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:32 - Message received: ������ �����, ���!
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:27 - Input parameters: time = 23:44, locale = ru
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:29 - Period resolved: NIGHT
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:32 - Message received: ������ ����, ���!
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:27 - Input parameters: time = 17:44, locale = en
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:29 - Period resolved: DAY
+2016-10-27 18:51:42 [TRACE] HelloWorldMessager:32 - Message received: Good day, World!
