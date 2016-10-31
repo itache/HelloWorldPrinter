@@ -10,6 +10,11 @@ public class HelloWorldMessager {
     private static final Logger logger = Logger.getLogger(HelloWorldMessager.class);
     private static final String SOURCE = "messages";
 
+    private static final int MORNING_START_HOUR = 6;
+    private static final int DAY_START_HOUR = 9;
+    private static final int EVENING_START_HOUR = 19;
+    private static final int NIGHT_START_HOUR = 23;
+
     /**
      * Utility class has no constructors
      */
@@ -19,9 +24,9 @@ public class HelloWorldMessager {
     /**
      * Returns localized greeting fitted to input time.
      *
-     * @throws NullPointerException if time or locale is null
-     * @throws MissingResourceException if no resource bundle with messages can be found
      * @return greeting message
+     * @throws NullPointerException     if time or locale is null
+     * @throws MissingResourceException if no resource bundle with messages can be found
      */
     public static String getMessage(LocalTime time, Locale locale) {
         logger.trace(String.format("Input parameters: time = %tR, locale = %s", time, locale));
@@ -40,17 +45,17 @@ public class HelloWorldMessager {
      * @return determined period
      */
     static Period determinePeriod(LocalTime time) {
-        int hours = time.getHour();
-        if( hours >= 6 && hours < 10) {
-            return Period.MORNING;
-        } else if(hours >= 10 && hours < 19) {
-            return Period.DAY;
-        } else if(hours >= 19 && hours < 22) {
-            return Period.EVENING;
-        }else {
+        int hours = time.minusMinutes(1).getHour();
+        if (hours >= NIGHT_START_HOUR || hours < MORNING_START_HOUR) {
             return Period.NIGHT;
         }
-
+        if (hours >= EVENING_START_HOUR) {
+            return Period.EVENING;
+        }
+        if (hours >= DAY_START_HOUR) {
+            return Period.DAY;
+        }
+        return Period.MORNING;
     }
 
     /**

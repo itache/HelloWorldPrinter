@@ -7,34 +7,66 @@ import java.util.Locale;
 public class HelloWorldMessagerTest {
 
     @Test
-    public void shouldResolveMorningPeriod() {
+    public void shouldResolveMorningPeriodOnLowerBound() {
         Assert.assertEquals(
                 HelloWorldMessager.Period.MORNING,
-                HelloWorldMessager.determinePeriod(LocalTime.of(6, 34))
+                HelloWorldMessager.determinePeriod(LocalTime.of(6, 1))
         );
     }
 
     @Test
-    public void shouldResolveDayPeriod() {
+    public void shouldResolveDayPeriodOnLowerBound() {
         Assert.assertEquals(
                 HelloWorldMessager.Period.DAY,
-                HelloWorldMessager.determinePeriod(LocalTime.of(13, 59))
+                HelloWorldMessager.determinePeriod(LocalTime.of(9, 1))
         );
     }
 
     @Test
-    public void shouldResolveEveningPeriod() {
+    public void shouldResolveEveningPeriodOnLowerBound() {
         Assert.assertEquals(
                 HelloWorldMessager.Period.EVENING,
-                HelloWorldMessager.determinePeriod(LocalTime.of(19, 25))
+                HelloWorldMessager.determinePeriod(LocalTime.of(19, 1))
         );
     }
 
     @Test
-    public void shouldResolveNightPeriod() {
+    public void shouldResolveNightPeriodOnLowerBound() {
         Assert.assertEquals(
                 HelloWorldMessager.Period.NIGHT,
-                HelloWorldMessager.determinePeriod(LocalTime.of(0, 56))
+                HelloWorldMessager.determinePeriod(LocalTime.of(23, 1))
+        );
+    }
+
+    @Test
+    public void shouldResolveMorningPeriodOnUpperBound() {
+        Assert.assertEquals(
+                HelloWorldMessager.Period.MORNING,
+                HelloWorldMessager.determinePeriod(LocalTime.of(9, 0))
+        );
+    }
+
+    @Test
+    public void shouldResolveDayPeriodOnUpperBound() {
+        Assert.assertEquals(
+                HelloWorldMessager.Period.DAY,
+                HelloWorldMessager.determinePeriod(LocalTime.of(19, 0))
+        );
+    }
+
+    @Test
+    public void shouldResolveEveningPeriodOnUpperBound() {
+        Assert.assertEquals(
+                HelloWorldMessager.Period.EVENING,
+                HelloWorldMessager.determinePeriod(LocalTime.of(23, 0))
+        );
+    }
+
+    @Test
+    public void shouldResolveNightPeriodOnUpperBound() {
+        Assert.assertEquals(
+                HelloWorldMessager.Period.NIGHT,
+                HelloWorldMessager.determinePeriod(LocalTime.of(6, 0))
         );
     }
 
@@ -42,7 +74,7 @@ public class HelloWorldMessagerTest {
     public void shouldGetEnMorningGreetingString() {
         Assert.assertEquals(
                 "Good morning, World!",
-                HelloWorldMessager.getMessage(LocalTime.of(7, 44), Locale.ENGLISH)
+                HelloWorldMessager.getMessage(LocalTime.of(7, 0), Locale.ENGLISH)
         );
     }
 
@@ -50,7 +82,7 @@ public class HelloWorldMessagerTest {
     public void shouldGetEnDayGreetingString() {
         Assert.assertEquals(
                 "Good day, World!",
-                HelloWorldMessager.getMessage(LocalTime.of(17, 44), Locale.ENGLISH)
+                HelloWorldMessager.getMessage(LocalTime.of(17, 0), Locale.ENGLISH)
         );
     }
 
@@ -58,7 +90,7 @@ public class HelloWorldMessagerTest {
     public void shouldGetRusEveningGreetingString() {
         Assert.assertEquals(
                 "Добрый вечер, Мир!",
-                HelloWorldMessager.getMessage(LocalTime.of(19, 44), Locale.forLanguageTag("ru"))
+                HelloWorldMessager.getMessage(LocalTime.of(21, 0), Locale.forLanguageTag("ru"))
         );
     }
 
@@ -66,7 +98,7 @@ public class HelloWorldMessagerTest {
     public void shouldGetRusNightGreetingString() {
         Assert.assertEquals(
                 "Доброй ночи, Мир!",
-                HelloWorldMessager.getMessage(LocalTime.of(23, 44), Locale.forLanguageTag("ru"))
+                HelloWorldMessager.getMessage(LocalTime.of(2, 0), Locale.forLanguageTag("ru"))
         );
     }
 }
