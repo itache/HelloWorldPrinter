@@ -18,7 +18,7 @@ public class Application {
             LocalTime time = LocalTime.now(zone);
             System.out.println(HelloWorldMessager.getMessage(time, locale));
         } catch (Exception ex) {
-            logger.error("Error occured", ex);
+            logger.error("Error occurred", ex);
             System.out.println("Internal error. Sorry");
         }
     }

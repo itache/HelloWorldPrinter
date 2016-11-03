@@ -45,7 +45,7 @@ public class HelloWorldMessager {
      * @return determined period
      */
     static Period determinePeriod(LocalTime time) {
-        int hours = time.minusMinutes(1).getHour();
+        int hours = time.getHour();
         if (hours >= NIGHT_START_HOUR || hours < MORNING_START_HOUR) {
             return Period.NIGHT;
         }

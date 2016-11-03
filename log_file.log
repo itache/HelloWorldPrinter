@@ -197,3 +197,15 @@
 2016-10-31 17:56:19 [TRACE] HelloWorldMessager:32 - Input parameters: time = 17:00, locale = en
 2016-10-31 17:56:19 [TRACE] HelloWorldMessager:34 - Period resolved: DAY
 2016-10-31 17:56:19 [TRACE] HelloWorldMessager:37 - Message received: Good day, World!
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:32 - Input parameters: time = 07:00, locale = en
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:34 - Period resolved: MORNING
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:37 - Message received: Good morning, World!
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:32 - Input parameters: time = 21:00, locale = ru
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:34 - Period resolved: EVENING
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:37 - Message received: Добрый вечер, Мир!
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:32 - Input parameters: time = 02:00, locale = ru
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:34 - Period resolved: NIGHT
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:37 - Message received: Доброй ночи, Мир!
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:32 - Input parameters: time = 17:00, locale = en
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:34 - Period resolved: DAY
+2016-11-03 09:41:57 [TRACE] HelloWorldMessager:37 - Message received: Good day, World!
